@@ -15,7 +15,6 @@
       justify-content: center;
       align-items: center;
     }
-
     .container {
       background: #ffffff;
       padding: 30px 40px;
@@ -24,19 +23,16 @@
       width: 100%;
       max-width: 400px;
     }
-
     h2 {
       text-align: center;
       margin-bottom: 20px;
       color: #333;
     }
-
     label {
       display: block;
       margin-top: 15px;
       color: #555;
     }
-
     input, textarea {
       width: 100%;
       padding: 10px;
@@ -45,7 +41,6 @@
       border-radius: 4px;
       box-sizing: border-box;
     }
-
     button {
       margin-top: 20px;
       width: 100%;
@@ -57,7 +52,6 @@
       cursor: pointer;
       font-size: 16px;
     }
-
     button:hover {
       background-color: #004d40;
     }
@@ -79,18 +73,15 @@
       <button type="submit">Send</button>
     </form>
   </div>
-
   <script>
     document.getElementById("contactForm").addEventListener("submit", function (e) {
       e.preventDefault();
-
       const name = document.getElementById("name").value.trim();
       const email = document.getElementById("email").value.trim();
       const message = document.getElementById("message").value.trim();
-
       if (name && email && message) {
         alert("Message sent successfully!");
-        this.reset(); // Clear form
+        this.reset();
       } else {
         alert("Please fill in all fields.");
       }
